@@ -54,13 +54,15 @@ WSGI_APPLICATION = "config.wsgi.application"
 # APPS
 # ------------------------------------------------------------------------------
 DJANGO_APPS = [
+    'jet',
+    'jet.dashboard',
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.sites",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    # "django.contrib.humanize", # Handy template tags
+    "django.contrib.humanize",
     "django.contrib.admin",
 ]
 THIRD_PARTY_APPS = [
@@ -70,11 +72,14 @@ THIRD_PARTY_APPS = [
     "allauth.socialaccount",
     "rest_framework",
     "django_celery_beat",
+    'markdown_deux',
+    'bootstrapform',
 ]
 
 LOCAL_APPS = [
+    'helpdesk',
     "soportes_ilana.users.apps.UsersConfig",
-    # Your stuff: custom apps go here
+
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -97,6 +102,8 @@ AUTH_USER_MODEL = "users.User"
 LOGIN_REDIRECT_URL = "users:redirect"
 # https://docs.djangoproject.com/en/dev/ref/settings/#login-url
 LOGIN_URL = "account_login"
+
+SITE_ID = 1
 
 # PASSWORDS
 # ------------------------------------------------------------------------------
@@ -212,6 +219,14 @@ EMAIL_BACKEND = env(
 # https://docs.djangoproject.com/en/2.2/ref/settings/#email-timeout
 EMAIL_TIMEOUT = 5
 
+# Email configuration
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_USER = 'Ilana Lab <no-reply@ilanalab.com>'
+EMAIL_HOST_USER = 'apptitud'
+EMAIL_HOST_PASSWORD = 'jkdsjk4534.sd!"'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
 # ADMIN
 # ------------------------------------------------------------------------------
 # Django Admin URL.
@@ -285,3 +300,11 @@ SOCIALACCOUNT_ADAPTER = "soportes_ilana.users.adapters.SocialAccountAdapter"
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+
+HELPDESK_DEFAULT_SETTINGS = {
+    'use_email_as_submitter': True,
+    'email_on_ticket_assign': True,
+    'email_on_ticket_change': True,
+    'login_view_ticketlist': True,
+    'tickets_per_page': 25
+}
