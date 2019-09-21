@@ -1,0 +1,5 @@
+[run]
+include = soportes_ilana/*
+omit = *migrations*, *tests*
+plugins =
+    django_coverage_plugin
