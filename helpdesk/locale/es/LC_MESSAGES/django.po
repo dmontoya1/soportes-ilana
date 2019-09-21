@@ -1009,7 +1009,7 @@ msgstr "Tickets Sin Asignar"
 #: templates/helpdesk/base.html:101 templates/helpdesk/public_base.html:6
 #: templates/helpdesk/public_base.html:14
 msgid "Helpdesk"
-msgstr "Mesa de Ayuda"
+msgstr "Soportes Ilana Lab"
 
 #: templates/helpdesk/base.html:111 templates/helpdesk/rss_list.html:9
 #: templates/helpdesk/rss_list.html:12 templates/helpdesk/rss_list.html:15
@@ -1098,18 +1098,18 @@ msgstr "Enviar Ticket"
 
 #: templates/helpdesk/dashboard.html:2
 msgid "Helpdesk Dashboard"
-msgstr "Panel de Control - Mesa de Ayuda"
+msgstr "Panel de Control - Soportes Ilana Lab"
 
 #: templates/helpdesk/dashboard.html:10
 msgid "Helpdesk Summary"
-msgstr "Resumen de Mesa de Ayuda"
+msgstr "Resumen de Soportes"
 
 #: templates/helpdesk/dashboard.html:25
 msgid ""
 "Welcome to your Helpdesk Dashboard! From here you can quickly see tickets "
 "submitted by you, tickets you are working on, and those tickets that have no"
 " owner."
-msgstr "Bienvenido al panel de control de Mesa de Ayuda. Desde aquí podrá ver los tickets creados por usted, los tickets en los que trabaja y los tickets sin dueño asignado."
+msgstr "Bienvenido al panel de control de Soportes Ilana Lab. Desde aquí podrá ver los tickets creados por usted, los tickets en los que trabaja y los tickets sin dueño asignado."
 
 #: templates/helpdesk/dashboard.html:27
 msgid ""
